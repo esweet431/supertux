@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "x86-Release",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [
+        "msvc_x86"
+      ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "VCPKG_BUILD",
+          "value": "ON"
+        },
+        {
+          "name": "HAVE_SDL",
+          "value": "true"
+        },
+        {
+          "name": "PACKAGE_VCREDIST",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}
